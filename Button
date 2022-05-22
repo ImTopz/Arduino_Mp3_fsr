@@ -1,0 +1,20 @@
+
+const int buttonPin = 10;     // the number of the pushbutton pin
+int buttonState = 0;
+int ledPin=4;
+
+void setup() {
+  pinMode(buttonPin,INPUT);
+  pinMode(ledPin,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  Serial.println(buttonState);
+  if(buttonState==HIGH)
+  delay(50);
+  if(buttonState==HIGH)
+  {digitalWrite(ledPin,HIGH);
+  delay(1000);}
+}
