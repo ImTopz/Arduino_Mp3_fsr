@@ -10,3 +10,14 @@ PIR.INO是通过PIR传感器控制LED灯圈的亮灭、通过倾斜开关来实�
 OS1生成成功
 
 回顾当时的代码感觉最好的实现方式应该是通过中断来实现，这样可以极大的增强代码的鲁棒性，有时间会补写中断实现的代码
+
+
+An Arduino-based mp3 device with pressure sensor to control play and pause
+After starting up, it will automatically enter the polling mode, and control the on and off of the LED light circle and the playback of MP3 or WAV format music through the FSR film pressure sensor. On, MP3 is not playing, MP3 is playing for the second time, the LED light circle is off, the third time is equal to the first time, a total of three FSR sensors and light circles are supported, the light circle uses WS2812 library, polling detection
+
+
+PIR.INO uses the PIR sensor to control the LED light ring to turn on and off, and the music switch is realized by tilting the switch.
+
+OS1 generated successfully
+
+Looking back at the code at that time, I feel that the best way to implement it should be through interrupts, which can greatly enhance the robustness of the code, and I will rewrite the code for interrupt implementation when I have time
